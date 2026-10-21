@@ -1,0 +1,14 @@
+{
+  "name": "jenni",
+  "version": "1.0.0",
+  "description": "JENNi Instant Commerce for Grok Build via the hosted MCP server at shop.jennipro.com/mcp. Search 58,900+ GTIN-verified products on local US retail store shelves, verify real-time ZIP-level availability and local shelf pricing, and create instant checkout sessions for 1-hour courier delivery.",
+  "author": {
+    "name": "JENNi",
+    "url": "https://shop.jennipro.com"
+  },
+  "homepage": "https://shop.jennipro.com",
+  "repository": "https://shop.jennipro.com/.well-known/mcp.json",
+  "license": "MIT",
+  "keywords": ["jenni", "shopping", "ecommerce", "local delivery", "instant commerce", "retail", "mcp"],
+  "logo": "assets/logo.svg"
+}
