@@ -16,7 +16,8 @@ In Grok Build, open `/plugin`, search for **jenni**, and install. No API key is 
 | Tool | Purpose |
 |---|---|
 | `search_catalog` | Search the product catalog, optionally using a ZIP code |
-| `get_product` | Inspect product details |
+| `find_stores` | Find stores for a ZIP code |
+| `get_product` | Retrieve product information |
 | `get_buying_options` | Inspect ZIP-specific buying options |
 | `start_checkout` | Begin JENNi-hosted checkout, where the shopper reviews and confirms the purchase; checkout does not complete in MCP |
 
