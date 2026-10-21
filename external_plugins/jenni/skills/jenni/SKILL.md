@@ -1,14 +1,14 @@
 ---
 name: jenni
-description: Search local US retail store shelves through the JENNi Instant Commerce MCP server, verify real-time ZIP-level stock and local shelf prices, and create Stripe checkout links for 1-hour same-day courier delivery.
+description: Search the JENNi product catalog, inspect ZIP-specific buying options, and begin JENNi-hosted checkout for shopper review and confirmation.
 ---
 
-# JENNi Instant Commerce Skill
+# JENNi Skill
 
-Use the `jenni` MCP tools (`https://shop.jennipro.com/mcp`) whenever a user wants to find physical products available near them today, compare local brick-and-mortar shelf prices, check 1-hour courier delivery eligibility by US ZIP code, or purchase items for same-day local delivery.
+Use the `jenni` MCP tools (`https://shop.jennipro.com/mcp`) to help a shopper search products, inspect buying options for a ZIP code, and hand off to JENNi-hosted checkout.
 
 ## Workflow
 
-1. **Search Local Catalog (`search_catalog`)**: Query by product name, brand, category, or UPC/GTIN, passing the user's 5-digit US `zip` code when known.
-2. **Inspect Product & Quote (`get_product` / `check_availability`)**: Verify nearby store stock, local shelf price, and same-day courier delivery ETA for the user's ZIP code.
-3. **Create Checkout (`create_checkout`)**: Generate a direct Stripe-backed checkout session (`https://shop.jennipro.com/p/{productId}`) so the user can complete their 1-hour delivery order.
+1. **Search (`search_catalog`)**: Search by product name, brand, category, or UPC/GTIN. Pass the shopper's ZIP code when available.
+2. **Review (`get_product` / `get_buying_options`)**: Inspect product details and buying options for the requested ZIP. Describe only the availability, price, and delivery information returned by the tools; do not imply stock is guaranteed or delivery is real-time.
+3. **Begin checkout (`start_checkout`)**: Hand off to JENNi-hosted checkout. The shopper reviews and confirms the purchase there. Checkout does not complete in MCP.

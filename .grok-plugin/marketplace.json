@@ -776,7 +776,7 @@
     },
     {
       "name": "jenni",
-      "description": "JENNi Instant Commerce integration (hosted MCP server + skill). Search 58,900+ GTIN-verified products on local US retail store shelves, verify real-time ZIP-level availability and local shelf pricing, and create instant Stripe checkout links for 1-hour courier delivery. No API key needed.",
+      "description": "JENNi integration (hosted MCP server + skill). Search the catalog, inspect ZIP-specific buying options, and begin JENNi-hosted checkout for shopper review and confirmation. No API key needed.",
       "category": "productivity",
       "source": {
         "type": "local",
